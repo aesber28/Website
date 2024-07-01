@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Shopping</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</header>
+	
+	<body>
+	
+	<style> 
+	.contents {
+		padding-bottom: 30px;
+	}
+	</style>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+		<div class="header">
+		
+			<img src="images\logo.png" alt ="logo" 
+			style="height: 100px; ">
+			
+		<div class="search-container">
+			<input type="text" placeholder="Search" name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>	
+		
+		<div class="SignUp-button">
+			<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+			<div id="id01" class="modal">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<form class="modal-content" action="/action_page.php">
+					<div class="container">
+					<img src="images\logo.png" alt ="logo" 
+						style="height: 70px; margin-left: 150px; ">
+						<h1>Sign Up</h1>
+						<p>Please fill in this form to create an account.</p>
+						<hr>
+						<label for="email"><b>Username/Email</b></label>
+						<input type="text" placeholder="Enter Email or Username" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<label for="psw-repeat"><b>Repeat Password</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+						<label>
+							<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+						</label>
+
+						<p>By creating an account you agree to Miss A's Boutique Shop's <a href="#" style="color:dodgerblue">Privacy Policy</a> and <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+						<div class="clearfix">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="bag-button">
+			<button style="font-size:24px"><i class="fa fa-shopping-bag"></i></button>
+		</div>
+			
+		</div>
+		
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutuspage.html">About Us</a></li>
+				<li><a class="active" href="shop.html">Shop</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	
+		<div class="contents">
+		
+			<div id="Promotions">
+				<h1 style="color: red;"> {{description}} </h1> 
+			</div>
+			
+			<img id= "whitedress" src="images\whitedress.jpg" alt ="white dress">
+			<img id= "reddress" src="images\reddress.jpg" alt ="red dress">
+			<img id= "bluedress" src="images\bluedress.jpg" alt ="blue dress">
+			
+			<div class="price1"> <p> White Dress | $50.00 </p> </div>
+			<div class="price2"> <p> Red Dress | $60.00 </p></div>
+			<div class="price3"> <p> Blue Dress | $70.00 </p></div>
+			
+			<div id="shop1">
+				<p v-if="wd"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			<div id="shop2">
+				<p v-if="rd"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			<div id="shop3">
+				<p v-if="bd"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			 
+			<div id="button">
+			<button v-on:click="counter +=1" class="button button1" > Add to bag</button>
+			<button v-on:click="counter +=1" class="button button2" > Add to bag</button>
+			<button v-on:click="counter +=1" class="button button3" > Add to bag</button>
+
+			<img id= "orangedress" src="images\orangedress.jpg" alt ="orange dress">
+			<img id= "whiteromper" src="images\whiteromper.jpg" alt =" white romper">
+			<img id= "yellowdress" src="images\yellowdress.jpg" alt ="yellow dress">
+			
+			<div class="price4"> <p> Orange Dress | $80.00 </p></div>
+			<div class="price5"> <p> White Romper | $90.00 </p></div>
+			<div class="price6"> <p> Yellow Dress | $100.00 </p></div>
+			
+			<div id="shop4">
+				<p v-if="od"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			<div id="shop5">
+				<p v-if="wr"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			<div id="shop6">
+				<p v-if="yd"> In Stock </p>
+				<p v-else> Out of Stock </p>
+			</div>
+			
+			<button v-on:click="counter +=1" class="button button4"> Add to bag</button>
+			<button v-on:click="counter +=1" class="button button5"> Add to bag</button>
+			<button v-on:click="counter +=1" class="button button6"> Add to bag</button>
+			<h1 style="margin-left: 1200px;" > Bag ({{counter}}) </h1>
+			</div>
+		
+		</div>
+
+<script>
+var shop = new Vue ({
+	el: '#shop1',
+	data: {
+	
+		wd: false
+	}//end of data
+
+})// end of shop new Vue
+
+var shop = new Vue ({
+el: '#shop2',
+	data: {
+	
+		rd: true
+	}//end of data
+})
+var shop = new Vue ({
+el: '#shop3',
+	data: {
+	
+		bd: true
+	}//end of data
+})
+
+var shop = new Vue ({
+	el: '#shop4',
+	data: {
+	
+		od: false
+	}//end of data
+
+})// end of shop new Vue
+
+var shop = new Vue ({
+el: '#shop5',
+	data: {
+	
+		wr: true
+	}//end of data
+})
+var shop = new Vue ({
+el: '#shop6',
+	data: {
+	
+		yd: true
+	}//end of data
+})
+
+var bag = new Vue ({
+el: '#button',
+	data: {
+		counter: 0
+	}
+})
+
+var Prom = new Vue ({
+el: '#Promotions',
+	data: {
+		description: 'BUY ANY 2 GET HALF PRICE 1 !',
+	}
+})
+</script>
+		<div class="footer">
+		
+			<p> Miss A's Boutique All Rights Reserved</p>
+			
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a> 
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+			<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+		</div>
+
+	</body>
+</html>

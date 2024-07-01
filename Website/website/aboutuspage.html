@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>About Us</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</header>
+	
+	<body>
+	
+	<style>
+	.contents {
+	padding-bottom: 950px;
+	}
+	</style>
+	
+		<div class="header">
+		
+			<img src="images\logo.png" alt ="logo" 
+			style="height: 100px; ">
+			
+		<div class="search-container">
+			<input type="text" placeholder="Search" name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+		
+		<script>
+	// Get the modal/form
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>	
+		<div class="SignUp-button">
+			<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+			<div id="id01" class="modal">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<form class="modal-content" action="/action_page.php">
+					<div class="container">
+					<img src="images\logo.png" alt ="logo" 
+						style="height: 70px; margin-left: 150px; ">
+						<h1>Sign Up</h1>
+						<p>Please fill in this form to create an account.</p>
+						<hr>
+						<label for="email"><b>Username/Email</b></label>
+						<input type="text" placeholder="Enter Email or Username" name="email" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<label for="psw-repeat"><b>Repeat Password</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+						<label>
+							<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+						</label>
+
+						<p>By creating an account you agree to Miss A's Boutique Shop's <a href="#" style="color:dodgerblue">Privacy Policy</a> and <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+						<div class="clearfix">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="bag-button">
+		<button style="font-size:24px"><i class="fa fa-shopping-bag"></i></button>
+		</div>
+			
+		</div>
+		
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="aboutuspage.html">About Us</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="contents">
+		
+			<img id="shadowgirl" src="images\shadowgirl.png" alt="shadowgirl">
+			
+			<div class="para1">
+			
+				<p> The Miss A’s boutique shop values are supposed to provide a good customer service and <br>trending  clothing to the customers. <br><br>
+
+					Our mission is while providing a good quality of clothing line but also using the profit we <br> have made to help stray animals that need care. <br><br>
+
+					Therefore, every profit we make goes to the animal shelter or charity that helps stray <br> animals like dogs to have a shelter and food to eat. <br><br>
+
+					So, every clothing that we sell will go towards every stray animal <br> on the streets. </p>
+			</div>
+			
+			<div class="para2">
+			
+				<p> This business is not unique from the other businesses out there but the cause or the <br> purpose of it is what makes it unique. <br><br>
+
+					The reason for this is because you do not really get to hear lots of boutique shops or <br> retail shop that donates to the animal shelter or charity. <br><br>
+
+					Although the shop sells women clothes only this does not restrict anyone that likes <br> to shop in feminine clothes as well. <br><br>
+
+					Therefore, this boutique shop is open to shop to any gender or pronouns out there.</p>
+				
+			</div>
+			
+			<img id="girl" src="images\girl.png" alt="girl">
+			
+		</div>
+		
+		<div class="footer">
+		
+			<p> Miss A's Boutique All Rights Reserved</p>
+			
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a> 
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+			<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+			<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+		</div>
+
+	</body>
+</html>

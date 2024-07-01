@@ -1,0 +1,880 @@
+/*eliminating the white space around the webpage/styling body*/
+body {
+	display: block;
+	margin: 0px;
+	font-family: 'Oleo Script', cursive;
+}
+/* styling the Header container */
+.header {
+	background: #FDF0E8;
+	color: black;
+	padding-bottom:0px;
+}
+
+/* styling the search container */
+.header .search-container {
+	display: inline-block;
+	padding-left:900px;
+	padding-bottom:10px;
+}
+/* styling the input box */
+.header input[type=text] {
+	font-size: 17px;
+	border-radius: 0%;
+	font-family: 'Oleo Script', cursive;
+}
+
+/* styling the search button */
+.header .search-container button {
+	float: right;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-left: 5px;
+	background: #FDF0E8;
+	font-size: 17px;
+	border: solid;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.header .search-container button:hover {
+	background: #ccc;
+	font-size: 17px;
+}
+
+/* styling the bag container */
+.header .bag-button {
+	display: inline;
+	margin-left: 10px;
+}
+/* styling the bag button */
+.header .bag-button button {
+	background: #FDF0E8;
+	padding-bottom: 5px;
+}
+
+.header .bag-button button:hover {
+	background: #ccc;
+}
+
+/* styling the navigation bar */
+.nav ul {
+	list-style-type: none; /* removes the bullet points in list in nav */
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #E3D4CD;
+	font-size: 28px;
+}
+
+.nav li {
+	float: left;
+	border-right:1px solid #000000;/*adding border*/
+}
+
+.nav li:last-child {
+	border-right: none; /*removing the right border on the last contact nav */
+}
+
+.nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 149.89px; /*put spaces between the links */
+	text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+	background-color: #F1E7DD;
+	color: white;
+	
+}
+
+.nav .active {
+	background-color: #F1E7DD;
+	color: white;
+	
+}
+
+/*container for the body section of the webpages*/
+.contents {
+	background: #FDF0E8;
+	padding-top: 15px;
+}
+
+/*styling images*/
+.contents #women {
+	width: 800px;
+	height: 350px;
+	display: inline-block;
+	margin-left: 60px;
+	margin-right: 10px;
+	margin-top: 100px;
+	float: left;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+.contents .home2 {
+	font-size: 80px;
+	padding-left: 0px;
+	float: right;
+	margin-top:150px;
+	margin-right:100px;
+}
+
+.contents #dress {
+	width: 800px;
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+.contents .home1 {
+	font-size: 80px;
+	padding-left: 350px;
+}
+
+.contents #shadowgirl {
+	width: 300px;
+	height: 400px;
+	display:inline-block;
+	margin-left: 90px;
+	margin-right: 0px;
+	margin-top: 10px;
+	float: left;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents .para1 p {
+	font-size: 26px;
+	padding-left: 100px;
+	float: left;
+	text-align: left;
+
+}
+
+.contents .para2 p {
+	font-size: 26px;
+	padding-left: 90px;
+	float: left;
+	text-align: left;
+	margin-top: 50px;
+
+}
+
+.contents #girl {
+	width: 300px;
+	height: 400px;
+	display:inline-block;
+	margin-left: 0px;
+	margin-right: 70px;
+	margin-top: 10px;
+	float: right;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+	
+}
+
+.contents #phone {
+	width: 300px;
+	height: 300px;
+	display:inline-block;
+	margin-left: 70px;
+	margin-right: 250px;
+	margin-top: 10px;
+	float: left;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+	
+}
+
+.contents .contactDetails p {
+	font-size: 25px;
+}
+
+.contents .contactDetails h1 {
+	margin-bottom: 70px;
+	text-align: left;
+}
+
+.contents .contactDetails .email {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.contents .contactDetails .phone {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.contents .contactDetails .address {
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+/*styling the pictures in the shop webpage*/
+.contents #whitedress {
+	height: 400px;
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents #reddress {
+	height: 400px;
+	width: 300px;
+	margin-left: 200px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents #bluedress {
+	height: 400px;
+	width: 300px;
+	margin-left: 200px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents #orangedress {
+	height: 400px;
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents #whiteromper {
+	height: 400px;
+	width: 300px;
+	margin-left: 200px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+
+.contents #yellowdress {
+	height: 400px;
+	width: 300px;
+	margin-left: 200px;
+	margin-top: 30px;
+	box-shadow: 1px 2px 6px 2px rgba(0,0,0,.4);
+}
+/*styling the dress details/pricing in the shop webpage*/
+.contents .price1 {
+	display:inline-block;
+	margin-left: 180px;
+}
+.contents .price2 {
+	display:inline-block;
+	margin-left: 360px;
+}
+
+.contents .price3 {
+	display:inline-block;
+	margin-left: 380px;
+}
+.contents .price4 {
+	display:inline-block;
+	margin-left: 180px;
+}
+.contents .price5 {
+	display:inline-block;
+	margin-left: 340px;
+}
+
+.contents .price6 {
+	display:inline-block;
+	margin-left: 340px;
+}
+
+/*styling the buttons in the shop webpage*/
+
+.button {
+	font-size: 19px;
+	padding: 5px 25px;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 1px 2px 5px 2px rgba(0,0,0,.4);
+	transition-duration: 0.4s;
+	font-family: 'Oleo Script', cursive;
+	border-radius: 12px;
+	background-color: #FDF0E8; 
+	color: black; 
+	border: 2px #000000;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.button1 {
+	margin-left: 185px;
+}
+.button2 {
+	margin-left: 360px;
+}
+.button3 {
+	margin-left: 370px;
+}
+.button4 {
+	margin-left: 185px;
+}
+.button5 {
+	margin-left: 360px;
+}
+.button6 {
+	margin-left: 370px;
+}
+.button1:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+.button2:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+.button3:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+.button4:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+.button5:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+.button6:hover {
+	background-color: #E3D4CD;
+	color: white;
+}
+
+/*styling footer container*/
+.footer {
+	padding-right: 0px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background: #E3D4CD;
+	font-size: 20px;
+}
+
+.footer .fa {
+	text-align: center;
+	text-decoration: none;
+	display: inline;
+}
+
+.footer .fa:hover {
+    opacity: 0.5;
+}
+
+.footer p {
+	display: inline; /*so that the social media buttons align with the text in footer*/
+	margin-right: 10px;
+}
+
+/* Facebook button*/
+.footer .fa-facebook {
+	background: #3B5998;
+	color: white;
+	border-radius: 20%;
+	margin-top: 20px;
+	margin-left: 900px;
+	margin-bottom: 0px;
+	padding: 15px 18px 10px 18px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+}
+
+/* Instagram button*/
+.footer .fa-instagram {
+	background: #125688;
+	color: white;
+	border-radius: 20%;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding: 15px 15px 10px 15px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+}
+
+/* Twitter button*/
+.footer .fa-twitter {
+	background: #55ACEE;
+	color: white;
+	border-radius: 20%;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding: 15px 15px 10px 15px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+}
+
+/* Youtube button*/
+.footer .fa-youtube {
+	background: #bb0000;
+	color: white;
+	border-radius: 20%;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding: 15px 15px 10px 15px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+}
+
+/* Styling the sign up form */
+
+/* Full-width input fields */
+.header .SignUp-button input[type=text], input[type=password] {
+	width: 100%;
+	padding-right: 2px;
+	padding-top: 10px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #ffffff;
+	font-family: 'Oleo Script', cursive;
+	font-size: 15px;
+}
+
+/* Add a background color when the inputs get focus */
+.header .SignUp-button input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* styling the sign-up container */
+.header .SignUp-button {
+	display: inline;
+	cursor: pointer;
+}
+/* styling the sign-up button */
+.header .SignUp-button button {
+	font-size: 20px;
+	background: #FDF0E8;
+	font-family: 'Oleo Script', cursive;
+}
+
+.header .SignUp-button button:hover {
+	background: #ccc;
+}
+
+/* Extra styles for the cancel button */
+.header .SignUp-button .cancelbtn {
+	float: right;
+	width: 30%;
+	background-color: #FFFFFF;
+   
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.header .SignUp-button .cancelbtn, .signupbtn {
+	float: left;
+	width: 30%;
+	background-color: #FFFFFF;
+	margin-left: 50px;
+}
+
+/* Add padding to container elements */
+.header .SignUp-button .container {
+	padding: 16px;
+}
+
+/* The Modal (background) */
+.header .SignUp-button .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 40%; /* Full width */
+	height: 70%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+	margin-left: 500px;
+	margin-top: 100px;
+}
+
+/* Modal Content/Box */
+.header .SignUp-button .modal-content {
+	background-color: #FDF0E8;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler between the headings and the input fields */
+.header .SignUp-button hr {
+	border: 1px solid #000000;
+	margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.header .SignUp-button .close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+.header .SignUp-button .close:hover,
+.header .SignUp-button .close:focus {
+	color: #f44336;
+	cursor: pointer;
+}
+
+/* Clear floats */
+.header .SignUp-button .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Styling the out of stock details */
+.contents #shop1 {
+	display: inline-block;
+	margin-left: 210px;
+}
+.contents #shop2 {
+	display: inline-block;
+	margin-left: 420px;
+}
+.contents #shop3 {
+	display: inline-block;
+	margin-left: 440px;
+}
+.contents #shop4 {
+	display: inline-block;
+	margin-left: 210px;
+}
+.contents #shop5 {
+	display: inline-block;
+	margin-left: 420px;
+}
+.contents #shop6 {
+	display: inline-block;
+	margin-left: 440px;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.header .SignUp-button .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*Responsive designs*/
+
+/*Mobile screens*/
+@media only screen and (max-width: 768px) {
+.header img {
+	width: 200px;
+	height:50px;
+	}
+.header input[type=text] {
+	font-size: 17px;
+	border-radius: 0%;
+	font-family: 'Oleo Script', cursive;
+	padding-right: 100px;
+	}
+.header .search-container {
+	display: block;
+	padding-left:1px;
+	padding-bottom:10px;
+}
+.header .search-container button {
+	float: left;
+	padding-bottom: 3px;
+	margin-top: 0px;
+	margin-right: 3px;
+	margin-left: 5px;
+	background: #FDF0E8;
+	font-size: 17px;
+	border: solid;
+	cursor: pointer;
+	display: inline-block;
+	}
+.header .SignUp-button button {
+	font-size: 20px;
+	background: #FDF0E8;
+	font-family: 'Oleo Script', cursive;
+	margin-left: 5px;
+	margin-bottom:10px;
+	}
+.nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 3px 214px; /*put spaces between the links */
+	text-decoration: none;
+	font-size: 28px;
+	}
+.contents .home1 {
+	font-size: 40px;
+	padding-left: 15px;
+	}
+.contents #dress {
+	height: 200px;
+	width: 400px;
+	}
+
+.contents #women {
+	height: 200px;
+	width: 400px;
+	margin-left: 40px;
+	}
+.contents .home2 {
+	font-size: 40px;
+	padding-left: 15px;
+	margin-top:10px;
+	}
+.footer .fa-facebook{
+	background: #3B5998;
+	color: white;
+	border-radius: 20%;
+	margin-top: 0px;
+	margin-left: 100px;
+	margin-bottom: 0px;
+	padding: 15px 18px 10px 18px;
+	box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+}
+.footer p {
+	margin-bottom:20px;
+	margin-left: 50px;
+	display: block;
+}
+
+.contents .para1 p {
+	margin-bottom:10px;
+	margin-left: 9px;
+	display: block;
+	font-size: 15px;
+	padding-left: 0px;
+	margin-right: 0px;
+	}
+.contents #shadowgirl {
+	height:120px;
+	width: 100px;
+	margin-left:5px;
+	
+}
+.contents .para2 p {
+	margin-bottom:10px;
+	margin-left: 10px;
+	display: block;
+	font-size: 15px;
+	padding-left: 0px;
+	display: block;
+	}
+	
+.contents #girl {
+	height:120px;
+	width: 100px;
+	margin-left:5px;
+	
+	}
+.contents #whitedress {
+	height: 150px;
+	width: 150px;
+	margin-left:10px;
+	}
+.contents #reddress {
+	height: 150px;
+	width: 150px;
+	margin-left:10px;
+	}
+.contents #bluedress {
+	height: 150px;
+	width: 140px;
+	margin-left:10px;
+	}
+
+.contents #orangedress {
+	height: 150px;
+	width: 150px;
+	margin-left:10px;
+}
+.contents #whiteromper {
+	height: 150px;
+	width: 150px;
+	margin-left:10px;
+	}
+.contents #yellowdress {
+	height: 150px;
+	width: 140px;
+	margin-left:10px;
+	}
+
+.button {
+	font-size: 10px;
+	padding: 5px 10px;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 1px 2px 5px 2px rgba(0,0,0,.4);
+	transition-duration: 0.4s;
+	font-family: 'Oleo Script', cursive;
+	border-radius: 12px;
+	background-color: #FDF0E8; 
+	color: black; 
+	border: 2px #000000;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	}
+.button1 {
+	margin-left: 40px;
+	display:inline-block;
+	}
+.button2 {
+	margin-left: 110px;
+	display:inline-block;
+	}
+.button3 {
+	margin-left: 86px;
+	display:inline-block;
+	}
+.button4 {
+	margin-left: 40px;
+	display:inline-block;
+	}
+.button5 {
+	margin-left: 110px;
+	display:inline-block;
+	}
+.button6 {
+	margin-left: 86px;
+	display:inline-block;
+	}
+.contents .contactDetails p {
+	font-size: 16px;
+	}
+.contents #phone {
+	width: 100px;
+	height:100px;
+	margin-left:200px;
+	margin-bottom: 20px;
+}
+.contents .contactDetails h1 {
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 20px;
+	margin-top:100px;
+	margin-left: 0px;
+	}
+.contents .contactDetails {
+	margin-bottom: 0px;
+}
+
+.contents .contactDetails .email {
+	font-size: 20px;
+	margin-left: 110px;
+	}
+
+.contents .contactDetails .phone {
+	font-size: 20px;
+	margin-left: 110px;
+	}
+
+.contents .contactDetails .address {
+	font-size: 20px;
+	margin-left: 110px;
+	margin-bottom:0px;
+	}
+.contents #map {
+	width:400px; 
+	height: 200px;
+	margin-right: 0px;
+	
+	}
+.contents #mh h1 {
+	text-align: centre:
+	}
+/*styling the dress details/pricing in the shop webpage*/
+.contents .price1 {
+	display:inline-block;
+	margin-left: 20px;
+	font-size: 15px;
+	}
+.contents .price2 {
+	display:inline-block;
+	margin-left: 25px;
+	font-size: 15px;
+	}
+
+.contents .price3 {
+	display:inline-block;
+	margin-left: 37px;
+	font-size: 15px;
+	}
+.contents .price4 {
+	display:inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+	}
+.contents .price5 {
+	display:inline-block;
+	margin-left: 15px;
+	font-size: 15px;
+	}
+
+.contents .price6 {
+	display:inline-block;
+	margin-left: 15px;
+	font-size: 15px;
+	}
+	
+/*Styling the form in mobile screens*/
+
+/* The Modal (background) */
+.header .SignUp-button .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 70%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+	margin-left: 0px;
+	margin-top: 100px;
+	}
+	
+/* Styling the out of stock details in mobile screens */
+.contents #shop1 {
+	display: inline-block;
+	margin-left: 30px;
+}
+.contents #shop2 {
+	display: inline-block;
+	margin-left: 100px;
+}
+.contents #shop3 {
+	display: inline-block;
+	margin-left: 110px;
+}
+.contents #shop4 {
+	display: inline-block;
+	margin-left: 30px;
+}
+.contents #shop5 {
+	display: inline-block;
+	margin-left: 100px;
+}
+.contents #shop6 {
+	display: inline-block;
+	margin-left: 110px;
+}
+	
+.contents #Promotions h1 {
+	padding-left:0px;
+	}
+}
+
+.contents #Promotions h1 {
+	padding-left:550px;
+}
+
